@@ -13,6 +13,9 @@
 		26A80E232589B76C00FAF2AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A80E222589B76C00FAF2AC /* Preview Assets.xcassets */; };
 		26A80E2E2589B76C00FAF2AC /* DesignKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A80E2D2589B76C00FAF2AC /* DesignKitTests.swift */; };
 		26A80E392589B76C00FAF2AC /* DesignKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A80E382589B76C00FAF2AC /* DesignKitUITests.swift */; };
+		26A80E4C2589B7C900FAF2AC /* ACInputText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A80E4B2589B7C900FAF2AC /* ACInputText.swift */; };
+		26AA2FA02589C98A001FD935 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2F9F2589C98A001FD935 /* Colors.swift */; };
+		26AA2FA52589CA13001FD935 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AA2FA42589CA13001FD935 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		26A80E342589B76C00FAF2AC /* DesignKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A80E382589B76C00FAF2AC /* DesignKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignKitUITests.swift; sourceTree = "<group>"; };
 		26A80E3A2589B76C00FAF2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A80E4B2589B7C900FAF2AC /* ACInputText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACInputText.swift; sourceTree = "<group>"; };
+		26AA2F9F2589C98A001FD935 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		26AA2FA42589CA13001FD935 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +101,11 @@
 		26A80E1A2589B76900FAF2AC /* DesignKit */ = {
 			isa = PBXGroup;
 			children = (
+				26A80E492589B7B200FAF2AC /* Components */,
 				26A80E1B2589B76900FAF2AC /* DesignKitApp.swift */,
 				26A80E1D2589B76900FAF2AC /* ContentView.swift */,
 				26A80E1F2589B76C00FAF2AC /* Assets.xcassets */,
+				26AA2FA42589CA13001FD935 /* Colors.xcassets */,
 				26A80E242589B76C00FAF2AC /* Info.plist */,
 				26A80E212589B76C00FAF2AC /* Preview Content */,
 			);
@@ -128,6 +136,31 @@
 				26A80E3A2589B76C00FAF2AC /* Info.plist */,
 			);
 			path = DesignKitUITests;
+			sourceTree = "<group>";
+		};
+		26A80E492589B7B200FAF2AC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				26AA2F9E2589C980001FD935 /* Colors */,
+				26A80E4A2589B7B700FAF2AC /* Input */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		26A80E4A2589B7B700FAF2AC /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				26A80E4B2589B7C900FAF2AC /* ACInputText.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		26AA2F9E2589C980001FD935 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				26AA2F9F2589C98A001FD935 /* Colors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AA2FA52589CA13001FD935 /* Colors.xcassets in Resources */,
 				26A80E232589B76C00FAF2AC /* Preview Assets.xcassets in Resources */,
 				26A80E202589B76C00FAF2AC /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				26A80E1E2589B76900FAF2AC /* ContentView.swift in Sources */,
+				26AA2FA02589C98A001FD935 /* Colors.swift in Sources */,
+				26A80E4C2589B7C900FAF2AC /* ACInputText.swift in Sources */,
 				26A80E1C2589B76900FAF2AC /* DesignKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
